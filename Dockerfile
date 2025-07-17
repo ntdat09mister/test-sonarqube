@@ -20,4 +20,4 @@ COPY --from=builder /app/target/*.jar app.jar
 EXPOSE 8080
 
 # Run app
-ENTRYPOINT ["java", "-jar", "app.jar --spring.config.location=/run/src/main/resources/application.properties"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
